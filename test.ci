@@ -1,0 +1,7 @@
+program exams
+{
+    declare x;
+
+    if(x < 0);
+
+}.

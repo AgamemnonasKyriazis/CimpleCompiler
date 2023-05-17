@@ -1,0 +1,25 @@
+program scopeTest
+{
+    procedure KOO()
+    {
+        declare x;
+
+        procedure poo(inout y)
+        {
+            y := 111;
+        }
+
+        procedure foo()
+        {
+            call poo(inout x);
+        }
+
+        x := 999;
+        print(x);
+        call foo();
+        print(x);
+    }
+
+    # main #
+    call KOO();
+}.

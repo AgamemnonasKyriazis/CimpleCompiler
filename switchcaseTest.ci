@@ -1,0 +1,32 @@
+program switchcaseTest
+{
+
+    declare x;
+
+    procedure p0()
+    {
+        print(0);
+    }
+
+    procedure p1()
+    {
+        print(-x);
+    }
+
+    procedure p2()
+    {
+        print(x)
+    }
+
+    input(x);
+    switchcase
+        case (x = 0)
+            call p0();
+        case (x < 0)
+            call p1();
+        case (x > 0)
+            call p2();
+        default
+            print(1024);
+
+}.

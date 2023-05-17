@@ -1,0 +1,24 @@
+program prog1
+{
+	# Agamemnon Kyriazis 4400 cs04400@uoi.gr #
+	# Christos Pergaminelis 4474 cs04474@uoi.gr #
+	declare num;
+
+	function mod(in a, in b)
+	{
+		return (a-(a/b)*b); # assuming a/b = floor(a/b) as if they were floats #
+	}
+
+	procedure decToBin(in a)
+	{
+		while(a > 0)
+		{
+
+			print(mod(in a, in 2));
+			a := a/2;
+		};
+	}
+
+	input(num);
+	call decToBin(in num)
+}.

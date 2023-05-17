@@ -1,0 +1,15 @@
+program forLoop
+{
+    declare i;
+
+    i := 0;
+    forcase
+        case (i < 10)
+        {
+            i := i + 1;
+            print(i)
+        }
+        default
+            print(-1);
+
+}.

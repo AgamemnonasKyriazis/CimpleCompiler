@@ -1,0 +1,22 @@
+program incaseTest
+{
+    declare x;
+
+    incase
+        case (x = 0)
+        {
+            print(x);
+            x := -1
+        }
+        case (x < 0)
+        {
+            print(x);
+            x := 1
+        }
+        case (x > 0)
+        {
+            print(x);
+            x := 0
+        }
+        # this should create an inf loop #
+}.
